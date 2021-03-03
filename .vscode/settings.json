@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/Users/bobbay/.local/share/virtualenvs/what-doing-7J3DdASw/bin/python",
+    "python.pythonPath": "/home/bobjin/.pyenv/versions/3.9.2/bin/python",
     "python.linting.flake8Enabled": false,
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true
