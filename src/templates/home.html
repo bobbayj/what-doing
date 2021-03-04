@@ -1,7 +1,16 @@
-<h1>Welcome to Bob's Blog</h1>
-<p>
-    I am currently figuring out how to build this out
-    with Django.
-    <br>
+<!doctype html>
+
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Welcome to Bob's Blog</h1>
+    <p>
+        I am currently figuring out how to build this out with Django.
+        Sorry if it looks pretty shit.
+
+        If something is broken, email / whatsapp me with a screenshot please!
+    </p>
+    <p>
     You are logged in as: {{request.user}}
-</p>
+    </p>
+{% endblock %}

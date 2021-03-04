@@ -4,8 +4,15 @@
         <title>Bob's Blog</title>
     </head>
     <body>
-        {% block content &}
+        <h2> Functional navbar </h2>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li>About</li>
+        </ul>
+
+        {% block content %}
         Replace me
-        {% endblock &}
+        {% endblock %}
     </body>
 </html>

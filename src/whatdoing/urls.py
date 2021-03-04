@@ -21,6 +21,7 @@ from pages.views import home_view
 urlpatterns = [
     # path('blog', include('blog.urls')),
     path('', home_view, name='home'),
+    path('home', home_view, name='home'),
     path('blog/', include('blog.urls')),
     path('admin/', admin.site.urls),
 
