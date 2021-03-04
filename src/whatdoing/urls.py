@@ -17,11 +17,13 @@ from django.contrib import admin
 from django.urls import include, path
 
 from pages.views import home_view
+from cgtaxcalc.views import cgt_product_view
 
 urlpatterns = [
     # path('blog', include('blog.urls')),
     path('', home_view, name='home'),
     path('home', home_view, name='home'),
+    path('cgtaxcalc/', cgt_product_view, name='cgtaxcalc'),
     path('blog/', include('blog.urls')),
     path('admin/', admin.site.urls),
 

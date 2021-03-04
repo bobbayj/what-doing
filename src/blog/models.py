@@ -7,7 +7,7 @@ class Post(models.Model):
     author              = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title               = models.CharField(max_length=200)
     content             = models.TextField()
-    attachment          = models.FileField(upload_to='uploads/%Y/%m/%d/', max_length=200)
+    # attachment          = models.FileField(upload_to='uploads/%Y/%m/%d/', max_length=200)
     created_date        = models.DateTimeField(default=timezone.now)
     published_date      = models.DateTimeField(blank=True, null=True)
     last_edited_date    = models.DateTimeField(blank=True, null=True)
@@ -25,4 +25,4 @@ class Post(models.Model):
         return
 
     def __str__(self):
-        return self.title
+        return self.title + " - " + str(self.created_date.date())
