@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
 # Create your views here.
-def home_view(request, *args, **kwargs):
+def cgt_product_view(request, *args, **kwargs):
     return render(request, "cgtaxcalc.html", {})

@@ -23,7 +23,7 @@ urlpatterns = [
     # path('blog', include('blog.urls')),
     path('', home_view, name='home'),
     path('home', home_view, name='home'),
-    path('cgtaxcalc', cgt_product_view, name='cgtaxcalc'),
+    path('cgtaxcalc/', cgt_product_view, name='cgtaxcalc'),
     path('blog/', include('blog.urls')),
     path('admin/', admin.site.urls),
 
