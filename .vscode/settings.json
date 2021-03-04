@@ -2,5 +2,6 @@
     "python.pythonPath": "/home/bobjin/.local/share/virtualenvs/what-doing-Zqt_lt-g/bin/python",
     "python.linting.flake8Enabled": false,
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "emmet.includeLanguages": {"django-html": "html"},
 }
