@@ -12,7 +12,7 @@ def blog_home_view(request, *args, **kwargs):
     context = {
         'object': obj
     }
-    return render(request, "blog.html", context)
+    return render(request, "blog/home.html", context)
 
 @login_required(login_url='/admin/login/')
 def post_create_view(request, *args, **kwargs):
@@ -25,7 +25,7 @@ def post_create_view(request, *args, **kwargs):
     context = {
         'form': form,
     }
-    return render(request, "new.html", context)
+    return render(request, "blog/new.html", context)
 
 def post_edit_view(request, *args, **kwargs):
-    return render(request, "edit.html", {})
+    return render(request, "blog/edit.html", {})
